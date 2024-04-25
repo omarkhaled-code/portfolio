@@ -46,14 +46,14 @@ section {
   display: inline-block;
   padding: 1rem 2.8rem;
   background-color: var(--main-color);
-  border-radius: 4rem;
-  box-shadow: var(--box-shadow);
-  font-size: 1.6rem;
   color: var(--second-bg-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1rem;
   font-weight: 800;
   cursor: pointer;
   transition: var(--transition);
+  box-shadow: none;
 }
 
 /*/////////////////////////////////////////////////////
@@ -430,7 +430,14 @@ span {
 }
 
 .btn:hover {
-  box-shadow: none;
+  box-shadow: var(--box-shadow);
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.btn:active {
+  background-color: var(--main-color);
+  color: var(--second-bg-color);
 }
 
 /*/////////////////////////////////////////////////////
