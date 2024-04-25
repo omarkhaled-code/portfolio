@@ -56,6 +56,27 @@ section {
   box-shadow: none;
 }
 
+.social-media {
+  display: flex;
+  gap: 25px;
+  margin: 40px 0;
+  a {
+    i {
+      font-size: 25px;
+      color: var(--text-color);
+      border: 1px solid transparent;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    i:hover {
+      color: var(--main-color);
+      border-color: var(--second-bg-color);
+      box-shadow: 1px 0 10px rgba(0, 238, 255, 0.07);
+    }
+  }
+}
+
 /*/////////////////////////////////////////////////////
 /////////////////// Start Header ////////////////*/
 header {
